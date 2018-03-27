@@ -1,0 +1,72 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "eva",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AuthorQuote",
+                    "slots": [
+                        {
+                            "name": "author",
+                            "type": "LIST_OF_AUTHORS"
+                        }
+                    ],
+                    "samples": [
+                        "AuthorQuote get a quotation from {author}",
+                        "AuthorQuote get a quote from {author}",
+                        "AuthorQuote get a quote of {author}",
+                        "AuthorQuote I need a quote by {author}",
+                        "AuthorQuote what did {author} say",
+                        "AuthorQuote tell me a quotation from {author}"
+                    ]
+                },
+                {
+                    "name": "RandomQuote",
+                    "slots": [],
+                    "samples": [
+                        "RandomQuote tell me a random quote",
+                        "RandomQuote tell me a quote",
+                        "RandomQuote give me a quote",
+                        "RandomQuote random quotation"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_AUTHORS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Abraham Lincoln",
+                                "synonyms": [
+                                    "Lincoln",
+                                    "Abe Lincoln"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Albert Einstein",
+                                "synonyms": [
+                                    "Einstein"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
